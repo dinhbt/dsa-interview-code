@@ -6,7 +6,6 @@
 
 # Examples:
 
-    `
     Input: prices[] = {7, 10, 1, 3, 6, 9, 2}
     Output: 8
     Explanation: Buy for price 1 and sell for price 9.
@@ -18,6 +17,6 @@
     Input: prices[] = {1, 3, 6, 9, 11}
     Output: 10
     Explanation: Since the array is sorted in increasing order, we can make maximum profit by buying at price[0] and selling at price[n-1]
-    `
 
 1. Solution nested loop
+2. Solution Traversal
