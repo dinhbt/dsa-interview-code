@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var FindNumberDuplicate = /** @class */ (function () {
     function FindNumberDuplicate() {
-        this.hashSet = function (array) {
+        this.usingMap = function (array) {
             var _a;
             var map = new Map();
             var result = [];
@@ -16,7 +16,6 @@ var FindNumberDuplicate = /** @class */ (function () {
                     result.push(key);
                 }
             });
-            console.log(result);
             return result;
         };
     }
