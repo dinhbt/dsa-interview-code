@@ -4,20 +4,20 @@
 
 # Examples:
 
-Input: arr[] = [10, 3, 5, 6, 2]
-Output: [180, 600, 360, 300, 900]
-Explanation:
+    Input: arr[] = [10, 3, 5, 6, 2]
+    Output: [180, 600, 360, 300, 900]
+    Explanation:
 
-For i=0, res[i] = 3 _ 5 _ 6 _ 2 is 180.
-For i = 1, res[i] = 10 _ 5 _ 6 _ 2 is 600.
-For i = 2, res[i] = 10 _ 3 _ 6 _ 2 is 360.
-For i = 3, res[i] = 10 _ 3 _ 5 _ 2 is 300.
-For i = 4, res[i] = 10 _ 3 _ 5 \* 6 is 900.
-Input: arr[] = [12, 0]
-Output: [0, 12]
-Explanation:
+    For i=0, res[i] = 3 _ 5 _ 6 _ 2 is 180.
+    For i = 1, res[i] = 10 _ 5 _ 6 _ 2 is 600.
+    For i = 2, res[i] = 10 _ 3 _ 6 _ 2 is 360.
+    For i = 3, res[i] = 10 _ 3 _ 5 _ 2 is 300.
+    For i = 4, res[i] = 10 _ 3 _ 5 \* 6 is 900.
+    Input: arr[] = [12, 0]
+    Output: [0, 12]
+    Explanation:
 
-For i = 0, res[i] = 0.
-For i = 1, res[i] = 12.
+    For i = 0, res[i] = 0.
+    For i = 1, res[i] = 12.
 
 # Solution with nested loop and prefix, subffix
