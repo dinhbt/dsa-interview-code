@@ -65,7 +65,6 @@ var MaxiumSubArraySum = /** @class */ (function () {
             for (var i = 0; i < array.length; i++) {
                 maxSumAt = Math.max(array[i], array[i] + maxSumAt);
                 result = Math.max(result, maxSumAt);
-                console.log('max,result', maxSumAt, result);
             }
             return result;
         };
