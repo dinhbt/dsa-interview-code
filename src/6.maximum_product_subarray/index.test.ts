@@ -26,4 +26,16 @@ describe('6. Maximum Product Subarray', () => {
       expect(result).toEqual(12);
     });
   });
+
+  describe('c. Traversing', () => {
+    test('  - should return 180 when input [-2, 6, -3, -10, 0, 2]', () => {
+      const result = poae.traversing([-2, 6, -3, -10, 0, 2]);
+      expect(result).toEqual(180);
+    });
+
+    test('  - should return 0, 12 when input [12, 0]', () => {
+      const result = poae.traversing([0, 12]);
+      expect(result).toEqual(12);
+    });
+  });
 });

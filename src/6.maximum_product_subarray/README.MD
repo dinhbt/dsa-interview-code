@@ -13,4 +13,4 @@
     Output: 60
     Explanation: The subarray with maximum product is {60}.
 
-# Solution with nested loop
+# Solution with nested loop, min max, traversing

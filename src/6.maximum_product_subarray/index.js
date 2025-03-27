@@ -36,6 +36,23 @@ var MaxiumProductSubArray = /** @class */ (function () {
             }
             return max;
         };
+        this.traversing = function (array) {
+            var leftToRight = 1, rightToLeft = 1, max = 1;
+            var len = array.length;
+            for (var i = 0; i < len; i++) {
+                if (leftToRight === 0) {
+                    leftToRight = 1;
+                }
+                if (rightToLeft === 0) {
+                    rightToLeft = 1;
+                }
+                var j = len - 1 - i;
+                leftToRight = leftToRight * array[i];
+                rightToLeft = rightToLeft * array[j];
+                max = Math.max(leftToRight, rightToLeft, max);
+            }
+            return max;
+        };
     }
     return MaxiumProductSubArray;
 }());

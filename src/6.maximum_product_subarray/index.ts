@@ -45,4 +45,29 @@ export default class MaxiumProductSubArray {
     }
     return max;
   };
+
+  traversing = (array: number[]): number => {
+    let leftToRight = 1,
+      rightToLeft = 1,
+      max = 1;
+
+    const len = array.length;
+
+    for (let i = 0; i < len; i++) {
+      if (leftToRight === 0) {
+        leftToRight = 1;
+      }
+
+      if (rightToLeft === 0) {
+        rightToLeft = 1;
+      }
+
+      let j = len - 1 - i;
+      leftToRight = leftToRight * array[i];
+      rightToLeft = rightToLeft * array[j];
+      max = Math.max(leftToRight, rightToLeft, max);
+    }
+
+    return max;
+  };
 }
