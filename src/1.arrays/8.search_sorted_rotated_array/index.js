@@ -24,7 +24,7 @@ var SearchSortedRotatedArray = /** @class */ (function () {
     SearchSortedRotatedArray.prototype.binarySearch = function (array, search) {
         var low = 0, high = array.length - 1;
         while (low <= high) {
-            var mid = Math.floor((high - low) / 2);
+            var mid = low + Math.floor((high - low) / 2);
             if (array[mid] === search) {
                 return mid;
             }
