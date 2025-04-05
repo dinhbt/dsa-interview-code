@@ -11,12 +11,7 @@ var MiniumRotateArray = /** @class */ (function () {
             }
             return min;
         };
-        // 5, 6, 1, 2, 3, 4 =>
         /**
-         * step 1: L=0, R=5
-         * mid = 2 aL= 5 aR=4 aMid=1
-         *
-         *
          * @param array
          * @returns
          */
