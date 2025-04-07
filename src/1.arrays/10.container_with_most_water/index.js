@@ -26,6 +26,31 @@ var ContainerWithMostWater = /** @class */ (function () {
             }
             return max;
         };
+        /**
+         *     5      |
+         *     4      |    |
+         *     3      |    |    |
+         *     1   |  |    |    |
+         *
+         *  [1, 3, 4, 5]
+         *
+         *  left=0 right=3
+         * @param array
+         */
+        this.twoPointer = function (array) {
+            var left = 0, right = array.length - 1, max = 0;
+            while (left < right) {
+                var cal = Math.min(array[left], array[right]) * (right - left);
+                max = Math.max(max, cal);
+                if (array[left] < array[right]) {
+                    left = left + 1;
+                }
+                else {
+                    right = right - 1;
+                }
+            }
+            return max;
+        };
     }
     return ContainerWithMostWater;
 }());
